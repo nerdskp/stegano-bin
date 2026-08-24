@@ -14,7 +14,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
     "next": "16.3.0",
-    "react": "19.2.4",
+    "react": "19.2.8",
     "react-dom": "19.2.4",
     "secrets.js-grempe": "^2.0.0",
     "shadcn": "^4.8.0",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^24",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.18",
     "@types/react-dom": "19.2.3",
     "postcss": "^8.5",
     "tailwindcss": "^4.3.3",
