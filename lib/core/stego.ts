@@ -124,6 +124,11 @@ export function encodeLSB(imageData: ImageData, payload: string): ImageData {
     }
   }
 
+  // Force alpha to 255 for all pixels to prevent premultiplied alpha rounding during canvas export
+  for (let i = 3; i < outputData.length; i += RGBA_STRIDE) {
+    outputData[i] = 255;
+  }
+
   return new ImageData(outputData, imageData.width, imageData.height);
 }
 
