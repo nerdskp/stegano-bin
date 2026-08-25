@@ -19,7 +19,10 @@ type CanvasImage = {
 }
 
 async function fileToImageData(file: File): Promise<CanvasImage> {
-  const bitmap = await createImageBitmap(file)
+  const bitmap = await createImageBitmap(file, {
+    premultiplyAlpha: 'none',
+    colorSpaceConversion: 'none'
+  })
   const canvas = document.createElement('canvas')
   canvas.width = bitmap.width
   canvas.height = bitmap.height
